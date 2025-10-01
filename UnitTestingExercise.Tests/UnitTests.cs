@@ -8,7 +8,11 @@ namespace UnitTestingExercise.Tests
     public class UnitTests
     {
         [Theory]
-        [InlineData(2, 3, 5, 10)] //Add test data <-------
+        [InlineData(2, 3, 5, 10)] 
+        [InlineData(4,2,6,12)]
+        [InlineData(2,2,2,6)]
+        [InlineData(1,1,1,3)]
+        //Add test data <-------
         public void AddTest(int num1, int num2, int num3, int expected)
         {
             //Start Step 3 here:
@@ -30,7 +34,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(7, 3, 4)]
-        [InlineData(10, 4, 6)] //Add test data <-------
+        [InlineData(10, 4, 6)] 
+        [InlineData(9,3,6)] 
+        [InlineData(4,2,2)]
+        //Add test data <-------
         public void SubtractTest(int minuend, int subtrhend, int expected)
         {
             //Start Step 5 here:
@@ -48,7 +55,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(1,3,3)]
-        [InlineData(6,1,6)]//Add test data <-------
+        [InlineData(6,1,6)]
+        [InlineData(3,3,9)]
+        [InlineData(9,1,9)]
+        //Add test data <-------
         public void MultiplyTest(int num1, int num2, int expected)
         {
             //Start Step 7 here:
@@ -67,7 +77,11 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(8,2,4)] //Add test data <-------
+        [InlineData(8,2,4)] 
+        [InlineData(9,3,3)]
+        [InlineData (6,2,3)]
+        [InlineData (4,2,2)]
+        //Add test data <-------
         public void DivideTest(int num1, int num2, int expected)
 
         {
